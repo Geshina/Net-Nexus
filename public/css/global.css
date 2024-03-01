@@ -6,7 +6,11 @@
   --secondary: hsl(0, 0, 10);
   --accent: #0000ff;
 }
-
+/* Use flex to fix high ress asymetry */
+body > * {
+  width: clamp(768px, 80vw, 1536px);
+  margin-inline: auto;
+}
 h1,
 h2,
 h3,
@@ -61,9 +65,6 @@ p {
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
   align-items: center;
-
-  margin-inline: 10vw;
-  height: 100vh;
 }
 .span-6 {
   grid-column: span 6;
@@ -105,13 +106,13 @@ p {
   border-bottom: var(--accent) 1px solid;
 }
 
-a{
+a {
   color: var(--secondary);
   display: flex;
   align-items: center;
   transition: all 0.2s;
 }
-a::after{
+a::after {
   content: url(../icons/arrow_circle_right.svg);
   height: 1.5rem;
   opacity: 0;

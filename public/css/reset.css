@@ -2,7 +2,7 @@
   1. Use a more-intuitive box-sizing model.
 */
 *, *::before, *::after {
-  box-sizing: border-box;
+  box-sizing:content-box;
 }
 /*
   2. Remove default margin
@@ -18,7 +18,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 /*
   5. Improve media defaults
@@ -34,7 +34,7 @@ input, button, textarea, select {
   font: inherit;
 }
 /*
-  7. Avoid text overflows
+  7. Avoid text overflows 
 */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;

@@ -1,0 +1,27 @@
+:root {
+  font-size: clamp(12px, 1vw, 16px);
+  --resolution: 1024px;
+}
+@media (max-width: 768px) {
+  body > * {
+    width: calc(100vw - 2rem );
+    margin-inline: 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .span-6 {
+    grid-column: span 2;
+  }
+  .span-4 {
+    grid-column: span 2;
+  }
+  .span-2 {
+    grid-column: span 1;
+  }
+  .span-6:has(img) {
+    grid-row: 1;
+  }
+}
