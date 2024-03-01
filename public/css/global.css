@@ -105,8 +105,26 @@ p {
   border-bottom: var(--accent) 1px solid;
 }
 
+a{
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+a::after{
+  content: url(../icons/arrow_circle_right.svg);
+  height: 1.5rem;
+  opacity: 0;
+  transition: all 0.2s;
+}
 a:hover {
   color: var(--accent) !important;
+}
+a:hover::after {
+  content: url(../icons/arrow_circle_right.svg);
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  opacity: 1;
 }
 img {
   height: 100vh;
