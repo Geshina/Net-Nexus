@@ -125,8 +125,7 @@ a:hover > span {
   opacity: 1;
   padding-left: 0.5rem;
 }
-
-span-6 > img {
+.span-6 > img {
   height: 100vh;
   object-fit: cover;
 }
@@ -138,6 +137,6 @@ span {
 }
 img.mobile-show {
   width: 100vw !important;
-  margin-inline: 0px !important;
-  margin-bottom: 6rem;
+  margin-inline: 0px;
+  margin-bottom: 4rem ;
 }

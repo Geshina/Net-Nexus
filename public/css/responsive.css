@@ -11,7 +11,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 4rem;
   }
   .span-6 {
     grid-column: span 2;
