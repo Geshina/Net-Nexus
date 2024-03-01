@@ -3,7 +3,7 @@
 :root {
   --white: #ffffff;
   --primary: #1a1a1a;
-  --secondary: #333;
+  --secondary: hsl(0, 0, 10);
   --accent: #0000ff;
 }
 
@@ -13,7 +13,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -61,7 +62,7 @@ p {
   gap: 1rem;
   align-items: center;
 
-  margin-inline: 12vw;
+  margin-inline: 10vw;
   height: 100vh;
 }
 .span-6 {
@@ -104,7 +105,7 @@ p {
   border-bottom: var(--accent) 1px solid;
 }
 
-a > p:hover {
+a:hover {
   color: var(--accent) !important;
 }
 img {
