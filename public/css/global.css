@@ -112,22 +112,32 @@ a {
   align-items: center;
   transition: all 0.2s;
 }
-a::after {
-  content: url(../icons/arrow_circle_right.svg);
-  height: 1.5rem;
+a > span {
+  color: var(--accent);
   opacity: 0;
   transition: all 0.2s;
 }
+
 a:hover {
   color: var(--accent) !important;
 }
-a:hover::after {
-  content: url(../icons/arrow_circle_right.svg);
-  height: 1.5rem;
-  padding-left: 0.5rem;
+a:hover > span {
   opacity: 1;
+  padding-left: 0.5rem;
 }
-img {
+
+span-6 > img {
   height: 100vh;
   object-fit: cover;
+}
+span {
+  font-size: 1.5rem !important;
+}
+.mobile-show{
+  display: none;
+}
+img.mobile-show {
+  width: 100vw !important;
+  margin-inline: 0px !important;
+  margin-bottom: 6rem;
 }

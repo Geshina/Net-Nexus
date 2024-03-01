@@ -4,13 +4,14 @@
 }
 @media (max-width: 768px) {
   body > * {
-    width: calc(100vw - 2rem );
+    width: calc(100vw - 2rem);
     margin-inline: 1rem;
   }
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    gap: 4rem;
   }
   .span-6 {
     grid-column: span 2;
@@ -23,5 +24,11 @@
   }
   .span-6:has(img) {
     grid-row: 1;
+  }
+  .mobile-hide{
+    display: none;
+  }
+  .mobile-show{
+    display: inherit;
   }
 }
